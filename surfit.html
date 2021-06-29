@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                margin:0;
+                background-color: #17181e;
+            }
+            .body1{
+                height:60px;
+                width:100%;
+                position: fixed;
+                top:0;
+                left:0;
+                border-bottom: 1px solid hsla(0,0%,100%,.07);
+            }
+            .upper-box{
+                height:100%;
+                width:100%;
+                padding:0px 30px 0px 30px;
+                align-items: center;
+                background-color: #17181e;
+            }
+            .inbox1{
+                height:100%;
+                width:auto;
+                align-items: center;
+            }
+            .logobox1{
+                height:32px;
+                width:32px;
+                padding-right:25px;
+                display: inline-block;
+                position: relative;
+                top: 16px;
+            }
+            .logo1{
+                width:32px;
+                height:32px;
+            }
+            .homepeed{
+                display: inline-block;
+                color:#78797f;
+                position: relative;
+                top:5px;
+                font-size: 15px;
+                padding-right:25px;
+            }
+            .direc{
+                display: inline-block;
+                color:#e9eaf0;
+                position: relative;
+                top: 5px;
+                font-size: 15px;
+                padding-right: 25px;
+            }
+            .work{
+                display: inline-block;
+                color:#78797f;
+                position: relative;
+                top:5px;
+                font-size:15px;
+                padding-right: 25px;
+            }
+            .topbox_r{
+                height:100%;
+                display:inline-block;
+                position: absolute;
+                top:20px;
+                right:20px;
+            }
+            .search{
+                width:20px;
+                height:20px;
+                display:inline-block;
+                position: relative;
+                font-size: 15px;
+                padding-right:18px;
+            }
+            .login{
+                display:inline-block;
+                position: relative;
+                color:#78797f;
+                font-size:100%;
+                bottom: 4px;
+            }
+            .body2{
+                width:100%;
+                height:100%;
+                
+            }
+            .left-box{
+                position: fixed;
+                width:230px;
+                height:100%;
+                margin-top: -20px;
+                padding-top: 150px;
+                padding-left:120px;
+            }
+            .total{
+                width:100%;
+                height:40px;
+                border-radius:4px;
+                background-color: #1f2026;
+                margin-bottom:5px;
+            }
+            .imgtotal{
+                display:inline-block;
+                position: relative;
+                left:15px;
+                top:10px;
+                width:18px;
+                height:18px;
+                padding-right: 25px;
+            }
+            .intotal{
+                display:inline-block;
+                color:#e8e9ee;
+                position:relative;
+                top:8px;
+                font-size:19px;
+            }
+            .develope{
+                width:100%;
+                height:40px;
+                margin-bottom:5px;
+            }
+            .imgdevelope{
+                display:inline-block;
+                position:relative;
+                left:15px;
+                top:10px;
+                width:18px;
+                height:18px;
+                padding-right: 25px;
+            }
+            .indevelope{
+                display:inline-block;
+                color:#78797d;;
+                position:relative;
+                top:8px;
+                font-size:19px;
+            }
+            .plan{
+                width:100%;
+                height:40px;
+                margin-bottom:5px;
+            }
+            .imgplan{
+                display:inline-block;
+                position:relative;
+                left:15px;
+                top:10px;
+                width:18px;
+                height:18px;
+                padding-right: 25px;
+            }
+            .inplan{
+                display:inline-block;
+                color:#78797d;;
+                position:relative;
+                top:8px;
+                font-size:19px;
+            }
+            .design{
+                width:100%;
+                height:40px;
+                margin-bottom:5px;
+            }
+            .imgdesign{
+                display:inline-block;
+                position:relative;
+                left:15px;
+                top:10px;
+                width:18px;
+                height:18px;
+                padding-right: 25px;
+            }
+            .indesign{
+                display:inline-block;
+                color:#78797d;
+                position:relative;
+                top:8px;
+                font-size:19px;
+            }
+            .marketing{
+                width:100%;
+                height:40px;
+                margin-bottom:5px;
+            }
+            .imgmarketing{
+                display:inline-block;
+                position:relative;
+                left:15px;
+                top:10px;
+                width:18px;
+                height:18px;
+                padding-right: 25px;
+            }
+            .inmarketing{
+                display:inline-block;
+                color:#78797d;;
+                position:relative;
+                top:8px;
+                font-size:19px;
+            }
+            .startup{
+                width:100%;
+                height:40px;
+                margin-bottom:5px;
+            }
+            .imgstartup{
+                display:inline-block;
+                position:relative;
+                left:15px;
+                top:10px;
+                width:18px;
+                height:18px;
+                padding-right: 25px;
+            }
+            .instartup{
+                display:inline-block;
+                color:#78797d;;
+                position:relative;
+                top:8px;
+                font-size:19px;
+            }
+            .right-box{
+                display:inline-block;
+                padding: 128px 0px 0px 0px;
+                position: relative;
+                padding-left:120px;
+                width: 960px;
+                height:100%;
+                left: 270px;
+                z-index:-1;
+            }
+            .alldr{
+                display : block;
+                color: #fff;
+                position : relative;
+                font-size: 40px;
+            }
+            .q-marker{
+                display: inline-block;
+                position: relative;
+                left:590px;
+                top: 10px;
+                padding-right: 8px;
+            }
+            .what{
+                display: inline-block;
+                color:#78797d;
+                font-size: 19px;
+                position:relative;
+                left:580px;
+                top:7px;
+            }
+            .item1{
+                width:300px;
+                height:600px;
+                position: relative;
+                display:inline-block;
+                top:30px;
+            }
+            .photo1{
+                width:300px;
+                height:300px;
+                border-radius: 4px;
+            }
+            .text1{
+                position : relative;
+                display: inline-block;
+                top : 20px;
+                height:150px;
+                width:300px;
+            }
+            .name1{
+                display: inline-block;
+                color:#fff;
+                font-size: 21px;
+            }
+            .love1{
+                fill:#78797d;
+                display: inline-block;
+                position: relative;
+                left : 220px;
+            }
+            .text-short1{
+                color:#fff;
+                position: absolute;
+                font-size: 14px;
+                top:32px;
+            }
+            .text-long1{
+                color:#78797d;
+                position: absolute;
+                padding-bottom:20px;
+                font-size: 14px;
+                top: 55px;
+                line-height: 1.6;
+            }
+            .text1-1{
+                position: relative;
+                display: inline-block;
+                height:40px;
+            }
+            .star1{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+            }
+            .insta1{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+                left:5px;
+            }
+            .item2{
+                width:300px;
+                height:600px;
+                position: relative;
+                top:30px;
+                display: inline-block;
+                padding-left:20px;
+            }
+            .photo2{
+                width:300px;
+                height:300px;
+                border-radius: 4px;
+            }
+            .text2{
+                position : relative;
+                display: inline-block;
+                top : 20px;
+                height:150px;
+                width:300px;
+            }
+            .name2{
+                display: inline-block;
+                color:#fff;
+                font-size: 21px;
+            }
+            .love2{
+                fill:#78797d;
+                display: inline-block;
+                position: relative;
+                left : 165px;
+            }
+            .text-short2{
+                color:#fff;
+                position: absolute;
+                font-size: 14px;
+                top:32px;
+            }
+            .text-long2{
+                color:#78797d;
+                position: absolute;
+                padding-bottom:20px;
+                font-size: 14px;
+                top: 55px;
+                line-height: 1.6;
+            }
+            .text2-1{
+                position: relative;
+                display: inline-block;
+                height:40px;
+            }
+            .star2{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+            }
+            .insta2{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+                left:5px;
+            }
+            .item3{
+                width:300px;
+                height:600px;
+                position: relative;
+                display:inline-block;
+                padding-left:20px;
+                top:30px;
+            }
+            .photo3{
+                width:300px;
+                height:300px;
+                border-radius: 4px;
+            }
+            .text3{
+                position : relative;
+                display: inline-block;
+                top : 20px;
+                height:150px;
+                width:300px;
+            }
+            .name3{
+                display: inline-block;
+                color:#fff;
+                font-size: 21px;
+            }
+            .love3{
+                fill:#78797d;
+                display: inline-block;
+                position: relative;
+                left : 220px;
+            }
+            .text-short3{
+                color:#fff;
+                position: absolute;
+                font-size: 14px;
+                top:32px;
+            }
+            
+            .text-long3{
+                color:#78797d;
+                position: absolute;
+                padding-bottom:20px;
+                font-size: 14px;
+                top: 75px;
+                line-height: 1.6;
+            }
+            .text3-1{
+                position: relative;
+                display: inline-block;
+                top:20px;
+                height:40px;
+            }
+            .star3{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+            }
+            .item4{
+                width:300px;
+                height:600px;
+                position: relative;
+                display:inline-block;
+                top:30px;
+                padding-right:20px;
+            }
+            .photo4{
+                width:300px;
+                height:300px;
+                border-radius: 4px;
+            }
+            .text4{
+                position : relative;
+                display: inline-block;
+                top : 20px;
+                height:150px;
+                width:300px;
+            }
+            .name4{
+                display: inline-block;
+                color:#fff;
+                font-size: 21px;
+            }
+            .love4{
+                fill:#78797d;
+                display: inline-block;
+                position: relative;
+                left : 220px;
+            }
+            .text-short4{
+                color:#fff;
+                position: absolute;
+                font-size: 14px;
+                top:32px;
+            }
+            .text-long4{
+                color:#78797d;
+                position: absolute;
+                padding-bottom:20px;
+                font-size: 14px;
+                top: 55px;
+                line-height: 1.6;
+            }
+            .text4-1{
+                position: relative;
+                display: inline-block;
+                height:40px;
+            }
+            .star4{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+            }
+            .insta4{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+                left:5px;
+            }
+            .item5{
+                width:300px;
+                height:600px;
+                position: relative;
+                display:inline-block;
+                top:30px;
+            }
+            .photo5{
+                width:300px;
+                height:300px;
+                border-radius: 4px;
+            }
+            .text5{
+                position : relative;
+                display: inline-block;
+                top : 20px;
+                height:150px;
+                width:300px;
+            }
+            .name5{
+                display: inline-block;
+                color:#fff;
+                font-size: 21px;
+            }
+            .love5{
+                fill:#78797d;
+                display: inline-block;
+                position: relative;
+                left : 195px;
+            }
+            .text-short5{
+                color:#fff;
+                position: absolute;
+                font-size: 14px;
+                top:32px;
+            }
+            .text-long5{
+                color:#78797d;
+                position: absolute;
+                padding-bottom:20px;
+                font-size: 14px;
+                top: 55px;
+                line-height: 1.6;
+            }
+            .text5-1{
+                position: relative;
+                display: inline-block;
+                height:40px;
+            }
+            .star5{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+            }
+            .insta5{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+                left:5px;
+            }
+            .item6{
+                width:300px;
+                height:600px;
+                position: relative;
+                display:inline-block;
+                padding-left:20px;
+                top:30px;
+            }
+            .photo6{
+                width:300px;
+                height:300px;
+                border-radius: 4px;
+            }
+            .text6{
+                position : relative;
+                display: inline-block;
+                top : 20px;
+                height:150px;
+                width:300px;
+            }
+            .name6{
+                display: inline-block;
+                color:#fff;
+                font-size: 21px;
+            }
+            .love6{
+                fill:#78797d;
+                display: inline-block;
+                position: relative;
+                left : 220px;
+            }
+            .text-short6{
+                color:#fff;
+                position: absolute;
+                font-size: 14px;
+                top:32px;
+            }
+            
+            .text-long6{
+                color:#78797d;
+                position: absolute;
+                padding-bottom:20px;
+                font-size: 14px;
+                top: 75px;
+                line-height: 1.6;
+            }
+            .text6-1{
+                position: relative;
+                display: inline-block;
+                top:20px;
+                height:40px;
+            }
+            .star6{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+            }
+            .insta6{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+                left:5px;
+            }
+            .be{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+                left:10px;
+            }
+            .chain6{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+                left:15px;
+            }
+            .insta6-1{
+                position: relative;
+                display: inline-block;
+                background-color: #1f2026;
+                border-radius : 4px;
+                width:30px;
+                height:30px;
+                left:20px;
+            }
+            .blue-box{
+                background-color: #3562ff;
+                color:#fff;
+                border-radius: 40px;
+                width:180px;
+                height:60px;
+                position:fixed;
+                bottom:20px;
+                right:20px;
+            }
+            .plus{
+                display: inline-block;
+                position:relative;
+                font-size: 30px;
+                left:25px;
+                top:13px;
+            }
+            .dre{
+                display: inline-block;
+                position:relative;
+                font-size:15px;
+                left:28px;
+                top:8px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="body1">
+            <div class="upper-box">
+                <div class="inbox1">
+                    <div class="logobox1">
+                        <svg class="logo1" width="100" height="100" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="48" stroke="white" stroke-width="4"></circle> <path d="M77.5999 70.302H77.3379C74.5269 70.059 72.0019 69.71 70.0139 68.835C67.4109 69.98 63.8879 70.685 60.0069 70.685C56.1259 70.685 52.6029 69.98 49.9999 68.835C47.3969 69.98 43.8749 70.685 39.9929 70.685C36.1119 70.685 32.5889 69.98 29.9859 68.835C27.9969 69.71 25.4719 70.059 22.6599 70.302H22.3999M62.4999 81.795H62.2249C61.2939 81.928 60.3269 82.099 59.3339 82.099C55.7659 82.099 52.5289 81.657 50.1359 80.24C47.7429 81.657 44.5059 82.099 40.9379 82.099C39.8479 82.099 38.7879 81.913 37.7739 81.754L37.4999 81.752M85.0039 58.626C80.4719 58.626 76.3589 57.435 73.3199 55.5C70.2809 57.435 66.1679 58.626 61.6359 58.626C57.1039 58.626 52.9909 57.435 49.9519 55.5C46.9129 57.435 42.7999 58.626 38.2679 58.626C33.7359 58.626 29.6229 57.435 26.5839 55.5C23.5449 57.435 19.4319 58.626 14.8999 58.626" stroke="white" stroke-width="4.2" stroke-miterlimit="10"></path></svg>
+                    </div>
+                    <div class="homepeed">홈 피드</div>
+                    <div class="direc">디렉토리</div>
+                    <div class="work">채용</div>
+                    <div class="topbox_r">
+                        <svg class="search" width="20" height="20" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.3243 4.98201C14.3159 6.97369 14.3159 10.2028 12.3243 12.1945C10.3326 14.1862 7.10345 14.1862 5.11177 12.1945C3.1201 10.2028 3.1201 6.97369 5.11177 4.98201C7.10345 2.99034 10.3326 2.99034 12.3243 4.98201ZM14.8612 12.8929C16.9167 9.96687 16.6367 5.90038 14.0213 3.28496C11.0924 0.356024 6.34365 0.356024 3.41472 3.28496C0.485785 6.21389 0.485785 10.9626 3.41472 13.8916C6.07942 16.5563 10.2504 16.7967 13.1869 14.6127L17.8336 19.2595C18.3022 19.7281 19.062 19.7281 19.5307 19.2595C19.9993 18.7908 19.9993 18.031 19.5307 17.5624L14.8612 12.8929Z" fill="#A0A0A2"></path></svg>
+                        <div class="login">로그인</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="body2">
+            <div class="left-box">
+                <div class="total">
+                    <img class="imgtotal" src="https://directory.surfit.io/assets/images/emoji/emoji-crown.png" alt="전체 디렉토리">
+                    <div class="intotal">전체 디렉토리</div>
+                </div>
+                <div class="develope">
+                    <img class="imgdevelope"src="https://storage.surfit.io/env/speciality/icon/icon-8429114075fa393cbc0834.png" alt="개발">
+                    <div class="indevelope">개발</div>
+                </div>
+                <div class="plan">
+                    <img class="imgplan" src="https://storage.surfit.io/env/speciality/icon/icon-11424631815fa39417e8b7a.png" alt="기획">
+                    <div class="inplan">기획</div>
+                </div>
+                <div class="design">
+                    <img class="imgdesign"src="https://storage.surfit.io/env/speciality/icon/icon-3016966095fa394188845e.png" alt="디자인">
+                    <div class="indesign">디자인</div>
+                </div>
+                <div class="marketing">
+                    <img class="imgmarketing"src="https://storage.surfit.io/env/speciality/icon/icon-16169941205fa394189ee02.png" alt="마케팅">
+                    <div class="inmarketing">마케팅</div>
+                </div>
+                <div class="startup">
+                    <img class="imgstartup"src="https://storage.surfit.io/env/speciality/icon/icon-7452008305fa39418ae64e.png" alt="스타트업">
+                    <div class="instartup">스타트업</div>
+                </div>
+            </div>
+            <div class = "right-box">
+                <div class="alldr">
+                    <span><strong>전체 디렉토리</strong></span>
+                    <svg class="q-marker" width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#A0A0A2" stroke-width="2"></circle> <path d="M9.7023 15.7345C9.7023 16.3309 10.1794 16.8229 10.7907 16.8229C11.3871 16.8229 11.8792 16.3309 11.8792 15.7345C11.8792 15.1381 11.3871 14.6311 10.7907 14.6311C10.1794 14.6311 9.7023 15.1381 9.7023 15.7345ZM11.5213 13.5874C11.5064 13.498 11.5064 13.4234 11.5064 13.3936C11.5064 12.8121 11.7599 12.3201 12.2519 11.9771L12.8931 11.5298C13.7579 10.9185 14.3841 10.0835 14.3841 8.90562C14.3841 7.38478 13.1913 5.92358 10.9846 5.92358C8.73313 5.92358 7.61487 7.5488 7.61487 9.03982C7.61487 9.27838 7.64469 9.51694 7.70433 9.72569L9.38918 9.84497C9.32954 9.68095 9.29972 9.39766 9.29972 9.17401C9.29972 8.32413 9.88122 7.47425 10.9846 7.47425C12.073 7.47425 12.5949 8.20484 12.5949 8.98017C12.5949 9.48712 12.3861 9.91952 11.8941 10.2774L11.2082 10.7694C10.3434 11.3956 10.0005 12.1262 10.0005 13.0208C10.0005 13.2296 10.0154 13.3936 10.0303 13.5874H11.5213Z" fill="#A0A0A2"></path></svg>
+                    <span class ="what">디렉토리란?</span>
+                </div>
+                <div class="item1">
+                    <img class="photo1" alt="김나영의 프로필 이미지" data-src="https://api.surfit.io/v1/directory/avatar/1421725267?t=1624960324" src="https://api.surfit.io/v1/directory/avatar/1421725267?t=1624960324" lazy="loaded">
+                    <div class="text1">
+                        <div class="name1">김나영</div>
+                        <svg class="love1" width="22" height="20" viewBox="0 0 22 20"><path d="M5.9 0C2.2 0 0 3.2 0 5.8 0 11.4 6.4 16.7 11 20 15.6 16.7 22 11.4 22 5.8 22 3.2 19.8 0 16.1 0 14.1 0 12.3 1.6 11 3.2 9.7 1.6 7.9 0 5.9 0Z"></path></svg>
+                        <div class="text-short1">프로덕트 디자이너 @KAIST</div>
+                        <div class="text-long1">KAIST에서 산업디자인을 배우고 있습니다. 현재 휴학 후 스타트업 그라인더에서 프로덕트 디자이너로 일하고 있습니다.</div>
+                    </div>
+                    <div class="text1-1">
+                        <img class="star1" width="30" height="30" src="https://directory.surfit.io/images/ic-pt.png?163e11a5961200e180f27e269d45a3cc">
+                        <img class="insta1" width="30" height="30" src="https://directory.surfit.io/images/ic-in.png?1edea097f4f956535e42d84870e8177d">
+                    </div>
+                </div>
+                <div class="item2">
+                    <img class="photo2" alt="Majem Yumi의 프로필 이미지" data-src="https://api.surfit.io/v1/directory/avatar/1684618007?t=1624870033" src="https://api.surfit.io/v1/directory/avatar/1684618007?t=1624870033" lazy="loaded">
+                    <div class="text2">
+                        <div class="name2">Majem Yumi</div>
+                        <svg class="love2" width="22" height="20" viewBox="0 0 22 20"><path d="M5.9 0C2.2 0 0 3.2 0 5.8 0 11.4 6.4 16.7 11 20 15.6 16.7 22 11.4 22 5.8 22 3.2 19.8 0 16.1 0 14.1 0 12.3 1.6 11 3.2 9.7 1.6 7.9 0 5.9 0Z"></path></svg>
+                        <div class="text-short2">디자이너 @프리랜서</div>
+                        <div class="text-long2">IPA마시는, UX 디자이너입니다.</div>
+                    </div>
+                    <div class="text2-1">
+                        <img class="star2" width="30" height="30" src="https://directory.surfit.io/images/ic-pt.png?163e11a5961200e180f27e269d45a3cc">
+                        <img class="insta2" width="30" height="30" src="https://directory.surfit.io/images/ic-lk.png?6cbfa209d132e92d0866be1738a5d418">
+                    </div>
+                </div>
+                <div class="item3">
+                    <img class="photo3" alt="김우석의 프로필 이미지" data-src="https://api.surfit.io/v1/directory/avatar/1041919130?t=1624839416" src="https://api.surfit.io/v1/directory/avatar/1041919130?t=1624839416" lazy="loaded">
+                    <div class="text3">
+                        <div class="name3">김우석</div>
+                        <svg class="love3" width="22" height="20" viewBox="0 0 22 20"><path d="M5.9 0C2.2 0 0 3.2 0 5.8 0 11.4 6.4 16.7 11 20 15.6 16.7 22 11.4 22 5.8 22 3.2 19.8 0 16.1 0 14.1 0 12.3 1.6 11 3.2 9.7 1.6 7.9 0 5.9 0Z"></path></svg>
+                        <div class="text-short3">
+                            <div>UI/UX/HCI/디자인연구</div>
+                            <div> @KAIST NextInterface Lab</div>
+                        </div>
+                        <div class="text-long3">네이버, 삼성, NH 등 다양한 기업 산학 프로젝트 참여 경험과 클라썸 앱, 웹 IA 및 UI 디자인 경험이 있습니다. 21.06-09 NAVER AI LAB 인턴</div>
+                    </div>
+                    <div class="text3-1">
+                        <img class="star3" width="30" height="30" src="https://directory.surfit.io/images/ic-pt.png?163e11a5961200e180f27e269d45a3cc">
+                    </div>
+                </div>
+                <div class="item4">
+                    <img class="photo4" alt="최유진의 프로필 이미지" data-src="https://api.surfit.io/v1/directory/avatar/998916045?t=1624797938" src="https://api.surfit.io/v1/directory/avatar/998916045?t=1624797938" lazy="loaded">
+                    <div class="text4">
+                        <div class="name4">최유진</div>
+                        <svg class="love4" width="22" height="20" viewBox="0 0 22 20"><path d="M5.9 0C2.2 0 0 3.2 0 5.8 0 11.4 6.4 16.7 11 20 15.6 16.7 22 11.4 22 5.8 22 3.2 19.8 0 16.1 0 14.1 0 12.3 1.6 11 3.2 9.7 1.6 7.9 0 5.9 0Z"></path></svg>
+                        <div class="text-short4">프로덕트 디자이너 @아이포트폴리오</div>
+                        <div class="text-long4">ENTJ, 사람의 행동과 생각 그리고 성향이나 가치관에 매우 관심이 많습니다. (=물음표 살인마)</div>
+                    </div>
+                    <div class="text4-1">
+                        <img class="star4" width="30" height="30" src="https://directory.surfit.io/images/ic-pt.png?163e11a5961200e180f27e269d45a3cc">
+                        <img class="insta4" width="30" height="30" src="https://directory.surfit.io/images/ic-in.png?1edea097f4f956535e42d84870e8177d">
+                    </div>
+                </div>
+                <div class="item5">
+                    <img class="photo5" alt="Eunbi Ko의 프로필 이미지" data-src="https://api.surfit.io/v1/directory/avatar/743197256?t=1624552845" src="https://api.surfit.io/v1/directory/avatar/743197256?t=1624552845" lazy="loaded">
+                    <div class="text5">
+                        <div class="name5">Eunbi Ko</div>
+                        <svg class="love5" width="22" height="20" viewBox="0 0 22 20"><path d="M5.9 0C2.2 0 0 3.2 0 5.8 0 11.4 6.4 16.7 11 20 15.6 16.7 22 11.4 22 5.8 22 3.2 19.8 0 16.1 0 14.1 0 12.3 1.6 11 3.2 9.7 1.6 7.9 0 5.9 0Z"></path></svg>
+                        <div class="text-short5">프로덕트 디자이너 @프리랜서</div>
+                        <div class="text-long5">i like minimal design. 간결한 디자인을 추구합니다.</div>
+                    </div>
+                    <div class="text5-1">
+                        <img class="insta5" width="30" height="30" src="https://directory.surfit.io/images/ic-lk.png?6cbfa209d132e92d0866be1738a5d418">
+                    </div>
+                </div>
+                <div class="item6">
+                    <img class="photo6" alt="김현우의 프로필 이미지" data-src="https://api.surfit.io/v1/directory/avatar/1469184283?t=1624508989" src="https://api.surfit.io/v1/directory/avatar/1469184283?t=1624508989" lazy="loaded">
+                    <div class="text6">
+                        <div class="name6">김현우</div>
+                        <svg class="love6" width="22" height="20" viewBox="0 0 22 20"><path d="M5.9 0C2.2 0 0 3.2 0 5.8 0 11.4 6.4 16.7 11 20 15.6 16.7 22 11.4 22 5.8 22 3.2 19.8 0 16.1 0 14.1 0 12.3 1.6 11 3.2 9.7 1.6 7.9 0 5.9 0Z"></path></svg>
+                        <div class="text-short6">
+                            <div>맛깔스러운 모든것</div>
+                            <div>@모던슈퍼그래픽스튜디오 크리에이티브 디렉터</div>
+                        </div>
+                        <div class="text-long6">Tasty Everything! 맛깔스러운 디자인,콘텐츠,굿즈를 만듭니다. 아티스트 크루 온더보트. 카카오톡 오픈챗 디자이너룸 ABORU. Based by Busan</div>
+                    </div>
+                    <div class="text6-1">
+                        <img class="star6" width="30" height="30" src="https://directory.surfit.io/images/ic-pt.png?163e11a5961200e180f27e269d45a3cc">
+                        <img class="insta6" width="30" height="30" src="https://directory.surfit.io/images/ic-in.png?1edea097f4f956535e42d84870e8177d">
+                        <img class="be" width="30" height="30" src="https://directory.surfit.io/images/ic-be.png?01964ecbfdb3ca649fa68a9d4ad1d33a">
+                        <img class="chain6" width="30" height="30" src="https://directory.surfit.io/images/ic-lk.png?6cbfa209d132e92d0866be1738a5d418">
+                        <img class="insta6-1" width="30" height="30" src="https://directory.surfit.io/images/ic-in.png?1edea097f4f956535e42d84870e8177d">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="blue-box">
+            <div class="plus">+</div>
+            <div class="dre">디렉토리 등록하기</div>
+        </div>
+    </body>
+</html>
