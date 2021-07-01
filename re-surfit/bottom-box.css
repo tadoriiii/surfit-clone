@@ -1,0 +1,12 @@
+.bottom-box{
+    background-color: #17181e;
+    padding: 0px 20px 0px 20px;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    min-height: 100%;
+    padding-top: 60px;
+}
+.total-box{
+    display: flex;
+}

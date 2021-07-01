@@ -1,0 +1,61 @@
+.top-box{
+    border-bottom: 1px solid hsla(0,0%,100%,.07);
+    background-color: #17181e;
+    height:60px;
+    width:100%;
+    position : fixed;
+    padding:0px 24px 0px 24px;
+    min-width: 300px;
+    z-index: 999;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.top-left-box{
+    display:flex;
+    color:#78797f;
+    align-items: center;
+    height:100%;
+    font-size:15px;
+    font-weight:600px;
+}
+.wave-mark{
+    padding-right:16px;
+}
+.home-feed{
+    padding:0px 14px 0px 14px;
+}
+.top-directory{
+    padding:0px 14px 0px 14px;
+    color:#fff;
+}
+.work{
+    padding: 0px 14px 0px 14px;
+}
+.top-right-box{
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    height:100%;
+}
+.top-right-box .search-box{
+    margin:0px 7px 0px 7px;
+    width:30px;
+    height:25px;
+    padding-top:5px;
+}
+.top-right-box .bell-box{
+    width:30px;
+    height:25px;
+    margin:0px 7px 0px 7px;
+    padding-top:5px;
+}
+.top-right-box .love-box{
+    width:30px;
+    height:25px;
+    margin:0px 7px 0px 7px;
+    padding-top:5px;
+}
+.top-right-box .profile-box{
+    margin:0px 7px 0px 7px;
+}
